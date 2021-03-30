@@ -1,0 +1,27 @@
+<div style="height: 80vh;">
+  <mat-toolbar>
+    <button *ngIf="displayHeading ; else showBackButton" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <ng-template #showBackButton>
+      <mat-icon (click)="goBack()">arrow_back</mat-icon>
+    </ng-template>
+    <span [ngClass]="'textAlign'">{{ title }}</span>
+    <span class="example-spacer"></span>
+    <div *ngIf="showProfileImage" mat-card-avatar>
+      <img [routerLink]="['/profile']" alt="profilePic" class="UserImage" src='{{user?.image}}'>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" [routerLink]="['/location-list']" mat-list-item>Locations</a>
+        <a (click)="sidenav.toggle();fnNavigateRoomList();" mat-list-item>Meeting Rooms</a>
+        <a (click)="sidenav.toggle()" [routerLink]="['/user-list']" mat-list-item>Users</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,29 @@
+.roomSearchContainer {
+  padding: 5%;
+}
+
+.labelCss {
+  font: 500 17px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sliderBtn {
+  padding-top: 15px;
+}
+
+.sliderContainer {
+  margin-bottom: 40px;
+}
+
+.searchBtn {
+  width: 100%;
+  height: 51px;
+  border-radius: 100px;
+}
+
+.feature {
+  width: 83%;
+}
+
+.fromInputDiv {
+  width: 100%;
+}

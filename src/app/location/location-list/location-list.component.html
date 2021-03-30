@@ -1,0 +1,13 @@
+<mat-card (click)="fnNavigateToLocation(location)" class="listContainer" *ngFor="let location of locations">
+    <mat-card-header>
+        <mat-card-title>{{location.buildingName}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <span>{{location.city}},{{location.country}}</span>
+    </mat-card-content>
+</mat-card>
+ <button mat-fab class="fab-bottom-right" routerLink="/location-details" routerLinkActive="active" color="primary">
+    <mat-icon>
+        <em class="material-icons md-48">add</em>
+    </mat-icon>
+ </button>

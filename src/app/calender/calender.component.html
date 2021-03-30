@@ -1,0 +1,6 @@
+<div class="dateDiv">
+<label for="title" class="dateLabel">Select Date :</label>
+<input matinput placeholder="date" [formControl]="date1" (dateChange)="onCalendarChange($event)" [matDatepicker]="my">
+<mat-datepicker-toggle [for]="my" matSuffix></mat-datepicker-toggle>
+<mat-datepicker #my></mat-datepicker>
+</div>

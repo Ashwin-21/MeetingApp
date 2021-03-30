@@ -1,0 +1,21 @@
+.center {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font: 500 17px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+.searchBtn{
+    width: 100%;
+    height: 51px;
+    border-radius: 100px;
+ }
+ 
+ .example-full-width {
+    width: 100%;
+   }
+.container{
+    padding: 5%;
+}
